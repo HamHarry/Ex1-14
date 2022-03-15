@@ -1,0 +1,39 @@
+<!-- JavaScript by Saowapak STID = 1630901179 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Ex2</title> <!-- ตั้งชื่อหน้าเว็ป -->
+    <!-- Ex2.1: JavaScript in <head> -->
+    <!-- สร้างฟังก์ชั่นเปลี่ยนข้อความใน id : ex2-1 ที่ทำผ่าน <script> ใน <head> -->  
+    <script> 
+      function myFunctionEx2_1(){
+        document.getElementById("ex2-1").innerHTML = "[Head] Mr.Saowapak the Series 👨🏻‍💻."; 
+      } 
+    </script>
+  </head>
+  <body>
+    <h2>JavaScript Ex2: Insert JavaScript</h2> <!-- หัวข้อ -->
+    <!-- Ex2.1: html-1 -->
+    <!-- กดปุ่มเพื่อทำตามฟังก์ชั่น myFunctionEx2_1 -->
+    <p id="ex2-1">What is your name?</p>
+    <button type="button" onclick="myFunctionEx2_1()">Answer 1</button>
+
+    <!-- Ex2.2: html-2 -->
+    <!-- สร้างฟังก์ชั่นเปลี่ยนข้อความใน id : ex2-2 ที่ทำผ่าน <script> ใน <body> -->
+    <p id="ex2-2">What are you doing?</p>
+    <button type="button" onclick="myFunctionEx2_2()">Answer 2</button>
+    <!-- Ex2.2: JavaScript in <body> -->
+    <script>
+      function myFunctionEx2_2() {
+        document.getElementById("ex2-2").innerHTML = "[Body] I'm studying JavaScript Programming 💻.";
+      }
+    </script>  
+
+    <!-- Ex2.3: html-3 -->
+    <!-- กดปุ่มเพื่อทำตามฟังก์ชั่น myFunctionEx2_3 -->
+    <p id="ex2-3">How are you feeling?</p>
+    <button type="button" onclick="myFunctionEx2_3()">Answer 3</button> 
+    <!-- Ex2.3: JavaScript in an External File -->  
+    <script src="/EX2_1630901179/Ex2_1630901179.js"></script> <!-- แสดงค่าที่ได้จาก include file -->  
+  </body>
+</html>

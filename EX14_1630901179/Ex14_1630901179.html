@@ -1,0 +1,119 @@
+<!-- JavaScript by Saowapak STID = 1630901179 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Ex14</title> <!-- ตั้งชื่อหน้าเว็ป -->
+</head>
+<body>
+    <h2>JavaScript Ex14: JavaScript Loops</h2> <!-- หัวข้อ -->
+    <!--Ex14.1: For Loop-->
+    <p><b>Ex14.1: For Loop</b></p>
+    <p><b>Iteration using for loop</b></p>
+    <p><b></b></p>
+    <p> round by for: <input id="roundFor" placeholder="number" onkeyup="roundFor()"></p> <!-- input เก็บค่าส่งไปที่ roundFor ผ่าน id roundFor -->
+    <p id="ex14-1"></p> <!-- รับค่ามาแสดงผล -->
+    <hr> <!-- ขีดเส้น -->
+
+    <!--Ex14.2: For-in Loop-->
+    <p><b>Ex14.2: For-in Loop</b></p>
+    <p><b>Iteration using for-in loop</b></p>
+    <table> <!-- กำหนดตาราง -->
+        <tr> <!-- กำหนดแถวของตาราง (Row) -->
+            <td> <!-- กำหนดเซลล์ของตาราง -->
+                Name:
+            </td>
+            <td>
+                <input id="name" placeholder="name"> <!-- input เก็บค่าส่งไปที่ name ผ่าน id name -->
+            </td>
+        </tr>
+        <tr> <!-- กำหนดแถวของตาราง (Row) -->
+            <td> <!-- กำหนดเซลล์ของตาราง -->
+                Age:
+            </td>
+            <td> <!-- กำหนดเซลล์ของตาราง -->
+                <input id="age" placeholder="age"> <!-- input เก็บค่าส่งไปที่ age ผ่าน id age -->
+            </td>
+        </tr>
+        <tr> <!-- กำหนดแถวของตาราง (Row) -->
+            <td> <!-- กำหนดเซลล์ของตาราง -->
+                Location:
+            </td>
+            <td> <!-- กำหนดเซลล์ของตาราง -->
+                <input id="location" placeholder="location"> <!-- input เก็บค่าส่งไปที่ location ผ่าน id location -->
+            </td>
+        </tr>
+        <tr> <!-- กำหนดแถวของตาราง (Row) -->
+            <td> <!-- กำหนดเซลล์ของตาราง -->
+                &nbsp;
+            </td>
+            <td> <!-- กำหนดเซลล์ของตาราง -->
+                <button onclick="objForIn()">Show Profile</button> <!-- กดปุ่ม onclick เพื่อทำงานฟังก์ชั่น objForIn() -->
+            </td>
+        </tr>
+    </table>
+    <p id="ex14-2"></p> <!-- รับค่ามาแสดงผล -->
+    <hr> <!-- ขีดเส้น -->
+    
+    <!--Ex14.3: For-of Loop-->
+    <p><b>Ex14.3: For-of Loop</b></p>
+    <p><b>Iteration using for-of loop</b></p>
+    <p>Data <br>
+    <input id="data1" placeholder="data1"><br> <!-- input เก็บค่าส่งไปที่ data1 ผ่าน id data1 -->
+    <input id="data2" placeholder="data2"><br> <!-- input เก็บค่าส่งไปที่ data2 ผ่าน id data2 -->
+    <input id="data3" placeholder="data3"><br> <!-- input เก็บค่าส่งไปที่ data3 ผ่าน id data3 -->
+    <button onclick="objForOf()">Show Data</button></p> <!-- กดปุ่ม onclick เพื่อทำงานฟังก์ชั่น objForIn() -->
+    <p id="ex14-3"></p> <!-- รับค่ามาแสดงผล -->
+    <hr> <!-- ขีดเส้น -->
+
+    <!--Ex14.4: While Loop ~For Loop-->
+    <p><b>Ex14.4: While Loop ~For Loop</b></p>
+    <p><b>Iteration using while loop</b></p>
+    <p> round by while: <input id="roundWhile" placeholder="number" onkeyup="roundWhile()"></p> <!-- input เก็บค่าส่งไปที่ roundWhile ผ่าน id roundWhile -->
+    <p id="ex14-4"></p> <!-- รับค่ามาแสดงผล -->
+    <hr> <!-- ขีดเส้น -->
+
+    <!--Ex14.5: while loop and for loop-->
+    <p><b>Ex14.5: While Loop</b></p>
+    <p><b>Checking using while loop</b></p>
+    <p> Enter number (2-12): <input id="inputNumber" placeholder="number"></p> <!-- input เก็บค่าส่งไปที่ inputNumber ผ่าน id inputNumber -->
+    <button onclick="checkWhile()">Multiplication</button></p> <!-- กดปุ่ม onclick เพื่อทำงานฟังก์ชั่น checkWhile() -->
+    <p id="checkWhile"></p> <!-- รับค่ามาแสดงผล -->
+    <p id="runFor"></p> <!-- รับค่ามาแสดงผล -->
+    <hr> <!-- ขีดเส้น -->
+
+    <!--Ex14.6: Do While Loop-->
+    <p><b>Ex14.6: Do While Loop</b></p>
+    <p><b>Testing using do while loop</b></p>
+    <p> Enter number: <input id="inputDoNumber" placeholder="number"></p> <!-- input เก็บค่าส่งไปที่ inputDoNumber ผ่าน id inputDoNumber -->
+    <button onclick="testDoWhile()">Test</button></p> <!-- กดปุ่ม onclick เพื่อทำงานฟังก์ชั่น testDoWhile() -->
+    <p id="ex14-6"></p> <!-- รับค่ามาแสดงผล -->
+    <hr> <!-- ขีดเส้น -->
+
+    <!--Ex14.7: Nested Loops-->
+    <p><b>Ex14.7: Nested Loops</b></p>
+    <p><b>Testing using nested loops</b></p>
+    <p> Loop1: <input id="loop1" placeholder="round number"></p> <!-- input เก็บค่าส่งไปที่ loop1 ผ่าน id loop1 -->
+    <p> Loop2: <input id="loop2" placeholder="round number"></p> <!-- input เก็บค่าส่งไปที่ loop2 ผ่าน id loop2 -->
+    <button onclick="testNestedLoops()">Test Nested Loops</button></br> <!-- กดปุ่ม onclick เพื่อทำงานฟังก์ชั่น testDoWhile() -->
+    <p id="ex14-7"></p> <!-- รับค่ามาแสดงผล -->
+    <br>
+    <hr> <!-- ขีดเส้น -->
+
+    <!--Ex14.8: Break Statement-->
+    <p><b>Ex14.8: Break Statement</b></p>
+    <p><b>Testing using break</b></p>
+    <p> Enter number: <input id="inputBreakNumber" placeholder="break number"></p> <!-- input เก็บค่าส่งไปที่ inputBreakNumber ผ่าน id inputBreakNumber -->
+    <button onclick="testBreak()">Test Break</button></br> <!-- กดปุ่ม onclick เพื่อทำงานฟังก์ชั่น testDoWhile() -->
+    <p id="ex14-8"></p> <!-- รับค่ามาแสดงผล -->
+    <hr> <!-- ขีดเส้น -->
+
+    <!--Ex14.9: Continue Statement-->
+    <p><b>Ex14.9: Continue Statement</b></p>
+    <p><b>Testing using continue</b></p>
+    <p> Enter number: <input id="inputContinueNumber" placeholder="continue number"></p> <!-- input เก็บค่าส่งไปที่ inputContinueNumber ผ่าน id inputContinueNumber -->
+    <button onclick="testContinue()">Test Continue</button></p> <!-- กดปุ่ม onclick เพื่อทำงานฟังก์ชั่น testContinue() -->
+    <p id="ex14-9"></p> <!-- รับค่ามาแสดงผล -->
+    <hr> <!-- ขีดเส้น -->
+    <script src="/EX14_1630901179/Ex14_1630901179.js"></script> <!-- แสดงค่าที่ได้จาก include file -->
+</body>
+</html>

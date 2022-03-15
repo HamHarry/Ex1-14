@@ -1,0 +1,50 @@
+<!-- JavaScript by Saowapak STID = 1630901179 -->
+<!DOCTYPE html>
+  <head>
+    <title>JavaScript Ex10</title> <!-- ตั้งชื่อหน้าเว็ป -->
+  </head>
+    <h2>JavaScript Ex10: JavaScript Functions</h2> <!-- หัวข้อ -->
+    <p><b>Ex10.1 A Simple Function</b></p>
+    <p id="ex10-1"></p> <!-- รับค่ามาแสดงผล -->
+    <button onclick="myHello()">Click Hello</button> <!-- กดปุ่ม onclick เพื่อทำงานฟังก์ชั่น myHello() -->
+    
+    <p><b>Ex10.2 Functions with an Argument</b></p>    
+    <p id="ex10-2"></p> <!-- รับค่ามาแสดงผล --> 
+    <button onclick="myWelcome('Mr.Saowapak Noibua','Programmer')">Click Welcome</button> <!-- กดปุ่ม onclick เพื่อทำงานฟังก์ชั่น myWelcome(name, job) -->
+
+    <p><b>Ex10.3 Functions with an Argument by Text</b></p>
+    <form> 
+        <input type="button" onclick="myText('Saowapak Noibua the Series')" value="What's your name?"> <!-- กดปุ่ม onclick เพื่อทำงานฟังก์ชั่น myText(text) -->
+        <input type="button" onclick="myText('I\'m studying JavaScript Programming')" value="What are you doing?"> <!-- กดปุ่ม onclick เพื่อทำงานฟังก์ชั่น myText(text) -->
+    </form> 
+    <p id="ex10-3"></p> <!-- รับค่ามาแสดงผล -->
+
+    <p><b>Ex10.4 Functions that returns a Area Value</b></p>    
+    <p>Area of a Rectangle</p>
+    <p id="ex10-4"></p> <!-- รับค่ามาแสดงผล -->  
+
+    <p><b>Ex10.5 Functions that returns a Temperature Value</b></p>    
+    <p>Fahrenheit to Celsius</p> 
+    <p id="ex10-5"></p> <!-- รับค่ามาแสดงผล -->  
+
+    <p><b>Ex10.6 Input & Output and regArea Functions</b></p>    
+    <p>Area of a Rectangle</p>
+    <input type="text" id="input1" placeholder="width" onkeyup="regArea()" /> <!-- input เก็บค่าส่งไปที่ regArea ผ่าน id input1 -->
+    <input type="text" id="input2" placeholder="length" onkeyup="regArea()" /> <!-- input เก็บค่าส่งไปที่ regArea ผ่าน id input2 -->
+    <br />
+    <div style="padding-top:10px">
+        Area Result:
+        <input type="text" id="result" /> <!-- input เก็บค่าอยู่ใน input1,input2 มาแสดงเป็นผลลัพธ์ result -->
+    </div>
+
+    <p><b>Ex10.7 Input & Output and toCelsius Functions</b></p>    
+    <p>Fahrenheit to Celsius</p>
+    <input type="text" id="fah_value" placeholder="fahrenheit" onkeyup="toCelsius()" /> <!-- input เก็บค่าส่งไปที่ toCelsius ผ่าน id fah_value -->
+    <br />
+    <div style="padding-top:10px">
+        Temp Result:
+        <input type="text" id="cel_result" /> <!-- input เก็บค่าอยู่ใน fah_value มาแสดงเป็นผลลัพธ์ cel_result -->
+    </div>
+    <script src="/EX10_1630901179/Ex10_1630901179.js"></script> <!-- แสดงค่าที่ได้จาก include file -->    
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!-- JavaScript by Saowapak STID = 1630901179 -->
+<!DOCTYPE html>
+<head>
+    <title>JavaScript Ex13</title> <!-- ตั้งชื่อหน้าเว็ป -->
+    <script src="/EX13_1630901179/EX13_1630901179.js"></script> <!-- แสดงค่าที่ได้จาก include file -->
+</head>
+<body>
+    <h1>Ex13 : JavaScript Conditionals</h1> <!-- หัวข้อ -->
+
+    <!-- Ex13.1: if Statements -->
+    <p><b>Ex13.1: if Statements</b></p>
+    <p>Check Number > 30</p>
+    <p>Number : <input id="input" placeholder="Number" onkeyup="CheckNum()"></p>
+    <p id="13-1-2"></p> <!-- รับค่ามาแสดงผล -->
+    <p id="13-1-1"></p> <!-- รับค่ามาแสดงผล -->
+    <hr> <!-- ขีดเส้น -->
+
+    <!-- Ex13.2: if-else Statements -->
+    <p><b>Ex13.2: if-else Statements</b></p>
+    <p>C to F</p>
+    <p>Celsius : <input id="c" onkeyup="convert('c')"></p> <!-- input เก็บค่าส่งไปที่ convert('c') ผ่าน id c -->
+    <p>Fahrenheit : <input id="f" onkeyup="convert('f')"></p> <!-- input เก็บค่าส่งไปที่ convert('f') ผ่าน id f -->
+    <hr> <!-- ขีดเส้น -->
+
+    <!--Ex13.3: if-elseif-else Statements-->
+    <p><b>Ex13.3: if-elseif-else Statements</b></p>
+    <p><b>Grade Calculator</b></p>
+    <p>Score: <input id="data" placeholder="score" onkeyup="grade()"></p> <!-- input เก็บค่าส่งไปที่ grade() ผ่าน id data -->
+    <p id="ex13-3"></p> <!-- รับค่ามาแสดงผล -->
+    <hr> <!-- ขีดเส้น -->
+
+    <!--Ex13.4: Nested if Statements-->
+    <p><b>Ex13.4: Nested if Statements</b></p>
+    <p><b>Score Ranges</b></p>
+    <table> <!-- กำหนดตาราง -->
+        <tr> <!-- กำหนดแถวของตาราง (Row) -->
+            <td> <!-- กำหนดเซลล์ของตาราง -->
+                <label>Score:</label>
+            </td>
+            <td> <!-- กำหนดเซลล์ของตาราง -->
+                <input id="score" placeholder="score" onkeyup="scoreRange()"> <!-- input เก็บค่าส่งไปที่ scoreRange() ผ่าน id score -->
+            </td>
+        </tr>
+        <tr> <!-- กำหนดแถวของตาราง (Row) -->
+            <td> <!-- กำหนดเซลล์ของตาราง -->
+                <label>Result:</label>
+            </td>
+            <td> <!-- กำหนดเซลล์ของตาราง -->
+                <input id="result" placeholder="range" onkeyup="scoreRange()"> <!-- input เก็บค่าส่งไปที่ scoreRange() ผ่าน id result -->
+            </td>
+        </tr>
+    </table>
+    <hr> <!-- ขีดเส้น -->
+ 
+    <!--Ex13.5: Switch Statements-->
+    <p><b>Ex13.5: Switch Statements</b></p>
+    <p><b>Grade Status</b></p>
+    <p>Grade: <input id="grade" placeholder="grade" onkeyup="gradeStatus()"></p> <!-- input เก็บค่าส่งไปที่ gradeStatus() ผ่าน id grade -->
+    <p id="ex13-5"></p> <!-- รับค่ามาแสดงผล -->
+    <hr> <!-- ขีดเส้น -->
+
+</body>
+</html>
